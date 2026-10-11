@@ -1,4 +1,4 @@
-# 🌾 UZHAVAN AI
+#  UZHAVAN AI
 
 ### Dialect-Aware Rural Tamil Voice Assistant for Farmers and Elderly Citizens
 
@@ -10,23 +10,23 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 **UZHAVAN AI** is an end-to-end, voice-first AI assistant specifically designed for farmers and elderly citizens in rural Tamil Nadu. It understands **Standard Tamil, regional Tamil dialects (Kongu, Madurai, Tirunelveli, Delta, Chennai), agricultural terminology, Tamil-English code-mixed speech, and elderly speech**, delivering reliable information regarding:
 
-* 🌾 Agriculture & Crop Cultivation
-* 🐛 Crop Diseases & Pest Control
-* 🧪 Fertilizers & Soil Management
-* 🏛️ Government Welfare Schemes & Subsidies
-* 🌦️ Weather Forecasts
-* 📈 Market Prices
-* 🏥 Public Rural Services
+*  Agriculture & Crop Cultivation
+*  Crop Diseases & Pest Control
+*  Fertilizers & Soil Management
+*  Government Welfare Schemes & Subsidies
+*  Weather Forecasts
+*  Market Prices
+*  Public Rural Services
 
 Unlike projects relying solely on cloud speech APIs, **UZHAVAN AI** contains a **trainable/fine-tunable ML speech recognition pipeline** built on open-source speech models (OpenAI Whisper / wav2vec2) fine-tuned using dialect and rural agricultural data.
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+##  System Architecture & Data Flow
 
 ```text
 User speaks Tamil Audio
@@ -50,12 +50,12 @@ Tamil Response Generation (Safe, Grounded, Government Disclaimers)
         ↓
 Tamil Text-to-Speech (gTTS / AI4Bharat Vakyansh)
         ↓
-🔊 Voice Output Response
+ Voice Output Response
 ```
 
 ---
 
-## ✨ Key Features & Research Contributions
+## Key Features & Research Contributions
 
 1. **Dialect-Conditioned Speech Recognition**: Front-end dialect recognition dynamically injects regional phonetic prompts into Whisper-small, slashing rural WER by **31.4% relative**.
 2. **Tamil Diglossia Normalizer**: Dual-head linguistic normalization resolving the gap between spoken rural vernacular (*Kodumtamil*) and canonical written Tamil (*Centamil*).
@@ -68,7 +68,7 @@ Tamil Text-to-Speech (gTTS / AI4Bharat Vakyansh)
 
 ---
 
-## 📊 Dataset Catalog & Verified Sources
+## Dataset Catalog & Verified Sources
 
 | Dataset | URL / Source | License | Estimated Hours | Dialect Labels | Gated |
 | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -82,7 +82,7 @@ Tamil Text-to-Speech (gTTS / AI4Bharat Vakyansh)
 
 ---
 
-## 🚀 Quick Start & Installation
+## Quick Start & Installation
 
 ### 1. Prerequisites & Environment Setup
 
@@ -107,7 +107,7 @@ cp .env.example .env
 
 ---
 
-## 🛠️ Execution & ML Pipelines
+## Execution & ML Pipelines
 
 ### Step 1: Download & Prepare Datasets
 
@@ -180,7 +180,7 @@ Visit **`http://localhost:5173`** to access the web app.
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ```bash
 docker-compose up --build
@@ -190,7 +190,7 @@ Access Web Application at `http://localhost:8000` and Data Collection tool at `h
 
 ---
 
-## 📈 Evaluation & Results
+## Evaluation & Results
 
 ```text
 Dialect             WER     CER     Accuracy
@@ -208,7 +208,7 @@ yet to updated
 
 ---
 
-## ⚖️ Privacy & Ethical Considerations
+## Privacy & Ethical Considerations
 
 * **Consent Required**: Data collection tool explicitly requires user consent before storing audio.
 * **Anonymization**: All speaker IDs are hashed; raw personal metadata is omitted.
